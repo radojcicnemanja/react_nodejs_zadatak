@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 700px;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  height: 20px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .dndnode.input {
+  border-color: #0041d0;
+}
+
+.dndflow .dndnode.output {
+  border-color: #ff0072;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow aside {
+    width: 20%;
+    max-width: 250px;
+  }
+}
+
+.validationflow .react-flow__node {
+  width: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  color: #555;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 12px;
+}
+
+.validationflow .react-flow__node-customnode {
+  background: #e6e6e9;
+  border: 1px solid #ddd;
+}
+
+.react-flow__node-custominput .react-flow__handle {
+  background: #e6e6e9;
+}
+
+.validationflow .react-flow__node-custominput {
+  background: #fff;
+
+}
+
+.validationflow .react-flow__handle-connecting {
+  background: #ff6060;
+}
+
+.validationflow .react-flow__handle-valid {
+  background: #55dd99;
+}
+
